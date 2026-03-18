@@ -31,13 +31,17 @@ allbutton[2].addEventListener("click", () => {
     notePad.value = "";
   }
 });
+let  p = document.querySelector('p')
+allbutton[1].addEventListener('click',()=>{
+    let notesselection = document.querySelector('.notesselection') 
+    notesselection.style.border="2px solid white"   
+    let card= document.createElement('div')
+let context= document.createElement('p')
+context.innerText=notePad.value
+card.style.border='2px solid green'
+notesselection.append(card)
+card.append(context)
 
-allbutton[3].addEventListener("click",()=>{
+    
 
 })
-
-
-// add new notes
-// allbutton[1].addEventListener('click',()=>{
-// alert("hello")
-// })
