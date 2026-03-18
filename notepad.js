@@ -38,6 +38,7 @@ allbutton[1].addEventListener('click',()=>{
     let card= document.createElement('div')
 let context= document.createElement('p')
 context.innerText=notePad.value
+notePad.value=""
 card.style.border='2px solid green'
 notesselection.append(card)
 card.append(context)
