@@ -14,10 +14,9 @@
       body {
         height: 100%;
         width: 100%;
+        background-color: #ffffff;
       }
       body {
-        background-color: #313131;
-        color: whitesmoke;
         font-family:
           "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       }
@@ -32,14 +31,19 @@
         padding: 10px;
         width: 600px;
         height: 600px;
-        background-color: #313131;
-        color: white;
+        background-color: #ececec;
         font-family: serif;
         font-size: 36px;
         border-radius: 10px;
       }
+      textarea:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
       h1 {
         margin-bottom: 10px;
+        font-size: 50px;
       }
       .count-sec {
         font-family: Arial, Helvetica, sans-serif;
@@ -57,23 +61,33 @@
         font-family:
           "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       }
-      .notesselection{
+      .notesselection {
         display: flex;
-flex-wrap: wrap;
+        flex-direction: column;
+
+        flex-wrap: wrap;
         gap: 10px;
         padding: 10px;
         border-radius: 6px;
-    }
-      .notes1{
+      }
+      .notes1 {
         width: 400px;
         border: 2px solid blue;
+      }
+      .second {
+        gap: 10px;
+        display: flex;
       }
     </style>
   </head>
   <body>
     <div class="main">
       <h1>Notepad</h1>
-      <textarea name="" id="" placeholder=""></textarea>
+      <div class="second">
+        <textarea name="" id="" placeholder=""></textarea>
+        <!-- notes -->
+        <div class="notesselection"></div>
+      </div>
       <div class="count-sec">
         <h4>Character's : <span>0</span></h4>
       </div>
@@ -82,12 +96,7 @@ flex-wrap: wrap;
         <button>add new Note</button>
         <button>Reset</button>
       </div>
-      
-      <!-- notes -->
-      <div class="notesselection">
-          
     </div>
-</div>
 
     <script src="notepad.js"></script>
   </body>
